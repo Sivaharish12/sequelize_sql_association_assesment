@@ -25,8 +25,6 @@ module.exports = (sequelize, DataTypes) => {
   userSubscription.init({
     app_id: {
       type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true
     },
     user_id: DataTypes.INTEGER,
     sub_id: DataTypes.INTEGER,
