@@ -6,13 +6,12 @@ const Sequelize = require('sequelize');
 
 exports.ytmusic = async (req, res, next) => {
   try {
-    console.log('--------');
     const users = await db.sequelize.models.user.findAll({
       include: [
         {
           model: db.sequelize.models.userSubscription,
           required: true,
-          where:{app_id:2}
+          where:{app_id:2,subscribed:'t'}
         }
        
       ],

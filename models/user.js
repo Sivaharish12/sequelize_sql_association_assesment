@@ -26,7 +26,6 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'user',
   });
-  console.log("user&&&&&",typeof user,user);
   return user;
 };
 

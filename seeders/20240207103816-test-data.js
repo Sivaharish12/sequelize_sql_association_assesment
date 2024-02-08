@@ -52,24 +52,9 @@ module.exports = {
       subscribed:'t',
       createdAt:new Date(),
       updatedAt:new Date()
-    }]),
-
-    await queryInterface.bulkInsert('users',[{
-      id:120,
-      name:'hari',
-      createdAt:new Date(),
-      updatedAt:new Date()
-    },{
-      id:121,
-      name:'hp',
-      createdAt:new Date(),
-      updatedAt:new Date()
-    },{
-      id:122,
-      name:'hrp',
-      createdAt:new Date(),
-      updatedAt:new Date()
     }])
+
+   
     /**
      * Add seed commands here.
      *
